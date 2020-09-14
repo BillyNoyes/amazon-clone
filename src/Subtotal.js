@@ -9,6 +9,14 @@ function Subtotal() {
   const history = useHistory();
   const [{ basket }, dispatch] = useStateValue();
 
+  const handleClick = (event) => {
+    if (getBasketTotal(basket) === 0) {
+      alert("Add items to your basket");
+    } else {
+      history.push("/payment");
+    }
+  };
+
   return (
     <div className="subtotal">
       <CurrencyFormat
@@ -28,9 +36,7 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"£"}
       />
-      <button onClick={(e) => history.push("/payment")}>
-        Proceed to Checkout
-      </button>
+      <button onClick={handleClick}>Proceed to Checkout</button>
     </div>
   );
 }
