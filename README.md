@@ -2,14 +2,27 @@
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
 
-Clone of Amazon
+Clone of the Amazon homepage, with products that can be added to the basket and a working checkout that uses Stripe payments to process card payments. 
 
 ---
 
 ## Technical Details
 
 - Front-end built using React
-- Material UI for form design/styling
+- React-Context-API for state management
+- Firebase Authentication for login/signup
+- Stripe to take payments
+- Firebase Functions to request client secret key from Stripe and send it back as an API query
+- Axios to call API query to the express server through Firebase Functions
+
+---
+
+## How to test the Amazone Clone for yourself
+
+- Download the files for the build
+- Type `npm install` in the terminal and then `npm start`
+- The build should now be running
+- Test the card payments using `4242 4242 4242 4242` as the card number
 
 ---
 
