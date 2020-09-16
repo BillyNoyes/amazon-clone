@@ -1,5 +1,7 @@
 ## Amazon Clone - Build in progress
 
+[https://fir-a6e48.web.app/](https://fir-a6e48.web.app/)
+
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
 
 Clone of the Amazon homepage, with products that can be added to the basket and a working checkout that uses Stripe payments to process card payments. 
